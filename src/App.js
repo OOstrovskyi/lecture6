@@ -8,14 +8,17 @@ import React from "react";
 //import Generator from "./components/lec6/lec6task4";
 //import Profile from "./components/lec6/lec6task5";
 //import ApiError from "./components/lec6/lec6task6/apierror";
-import Gallery from "./components/lec6/lec6task7/gallery";
+//import Gallery from "./components/lec6/lec6task7/gallery";
+import Bookmarks from "./components/lec6/lec6task8";
 
-import "./App.css";
+//import "./App.css";
+
 
 
 function App() {
   return (
-    <div className="App">
+    //<div className="App"> --for tasks 1-7
+    <div>
       {/* <MostlyUsed /> */}
       {/* <RarelyUsed /> */}
       {/* <PracticeTask /> */}
@@ -24,7 +27,8 @@ function App() {
       {/* {<Generator />} */}
       {/* <Profile /> */}
       {/* {<ApiError />} */}
-      {<Gallery />}
+      {/* {<Gallery />} */}
+      {<Bookmarks />}
     </div>
   );
 }
