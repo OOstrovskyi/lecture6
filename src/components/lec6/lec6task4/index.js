@@ -5,8 +5,8 @@ export default class Generator extends React.Component{
     constructor(props){
       super(props);
       this.state={
-            min : 2,
-            max : 14,
+            min : props.min,
+            max : props.max,
             randomNumber : 0,
             generated : false,
       }
@@ -15,8 +15,13 @@ export default class Generator extends React.Component{
     generate = () => {
         this.setState({randomNumber: Math.floor(Math.random()*(1+this.state.max-this.state.min)+this.state.min)});
         this.setState({generated: true});
-        //this.setState({randomNumber: Math.random()});
-        console.log(this.state.randomNumber);
+    }
+
+    shouldComponentUpdate(nextProps, nextState){
+      if (nextState.randomNumber % 2 !== 0)
+        return false;
+      else
+        return true;
     }
 
     render(){
