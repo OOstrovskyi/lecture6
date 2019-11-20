@@ -5,11 +5,11 @@ import React from "react";
 
 //import RandomNames from "./components/lec6/lec6task1";
 //import ToDo from "./components/lec6/lec6task2";
-import Generator from "./components/lec6/lec6task4";
+//import Generator from "./components/lec6/lec6task4";
 //import Profile from "./components/lec6/lec6task5";
 //import ApiError from "./components/lec6/lec6task6/apierror";
 //import Gallery from "./components/lec6/lec6task7/gallery";
-//import Bookmarks from "./components/lec6/lec6task8";
+import Bookmarks from "./components/lec6/lec6task8";
 
 //import "./App.css";
 
@@ -24,11 +24,11 @@ function App() {
       {/* <PracticeTask /> */}
       {/* {<RandomNames />} */} 
       {/* {<ToDo />} */}
-      {<Generator min={2} max={14}  />}
+      {/* {<Generator min={2} max={14}  />} */}
       {/* <Profile /> */}
       {/* {<ApiError />} */}
       {/* {<Gallery />} */}
-      {/* {<Bookmarks />} */}
+      {<Bookmarks />}
     </div>
   );
 }
